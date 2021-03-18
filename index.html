@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pokemonEvolve.css">
+    <title>Catch a Pokemon!</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png">
+</head>
+
+<body>
+
+    <div class='pokemon'>
+        <img class="position-absolute end-0 mt-5 mr-5" id="imageOne" src="">
+        <nav>
+            <form id="search">
+            <input type="text" id="textEntryBox" onclick="reset()" placeholder="Get Your Pokemon!"
+                    class="searchBox position-absolute start-50 translate-middle-x  w-25 mt-5">
+            </form>
+            <button class="bi bi-arrow-left-circle-fill position-absolute bottom-0 translate-middle-y mb-5" id="goBack">
+                BACK</button>
+
+            <button class="bi bi-caret-right-fill position-absolute top-50 end-0 mt-5" id="nextBtn"></button>
+            <button class="bi bi-caret-left-fill position-absolute start-50 top-50 translate-middle-x mt-5"
+                id="prevBtn"></button>
+        </nav>
+    </div>
+
+
+    <div class="container h-50 w-25 position-absolute start-0 top-50 translate-middle-y overflow-scroll">
+        <i class="bi bi-circle-half position-absolute" id="pokeBall1"></i>
+        <i class="bi bi-circle-half position-absolute top-0 end-0 start-100 bottom-100 mt-1" id='pokeBall2'></i>
+
+        <p id='p1'></p>
+        <p id='p2'></p>
+        <p id='p3'></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="./pokemonEvolve.js"></script>
+</body>
+
+</html>
