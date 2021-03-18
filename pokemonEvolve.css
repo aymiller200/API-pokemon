@@ -77,8 +77,9 @@ body {
 
 
 #imageOne{
-    height: 70%;
-    width: 60%;
+    height: 60%;
+    width: 40%;
+    margin-right: 50px;
     image-rendering:pixelated;
     animation-name: breathe;
     animation-iteration-count: infinite; 

@@ -31,11 +31,11 @@ async function fetchRes() {
 
             }
 
-            typeOfPoke.textContent = 'TYPE ONE: ' + json.types[0].type.name.toUpperCase()
-            nameOfPoke.textContent = 'NAME: ' + json.name.toUpperCase()
-            heightOfPoke.textContent = 'HEIGHT: ' + json.height + 'dm'
-            weightOfPoke.textContent = 'WEIGHT: ' + json.weight + 'hg'
-            img.src = json.sprites.front_default
+            typeOfPoke.textContent = 'TYPE ONE: ' + json.types[0].type.name.toUpperCase();
+            nameOfPoke.textContent = 'NAME: ' + json.name.toUpperCase();
+            heightOfPoke.textContent = 'HEIGHT: ' + json.height + 'dm';
+            weightOfPoke.textContent = 'WEIGHT: ' + json.weight + 'hg';
+            img.src = json.sprites.front_default;
 
             if (json.id == 1 || json.name == 'bulbasaur') {
                 prev.style.display = 'none'
@@ -43,14 +43,13 @@ async function fetchRes() {
                 prev.style.display = 'block'
             }
 
-
             if (json.id == 898 || json.name == 'calyrex') {
                 next.style.display = 'none'
             } else {
                 next.style.display = 'block'
             }
 
-            starter = json.id
+            starter = json.id;
 
 
         }).catch(err => console.log(err))
@@ -90,8 +89,8 @@ function toOne(e) {
     fetchRes(e)
 }
 
-searchP.addEventListener('submit', searchPoke)
-goBack.addEventListener('click', toOne)
+searchP.addEventListener('submit', searchPoke);
+goBack.addEventListener('click', toOne);
 next.addEventListener('click', nextPoke);
 prev.addEventListener('click', previousPoke);
 
