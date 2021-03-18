@@ -43,11 +43,11 @@ async function fetchRes() {
                 prev.style.display = 'block'
             }
 
-            if (json.id == 1 || json.name == 'bulbasaur') {
-                goBack.style.display = 'none'
-            } else {
-                goBack.style.display = 'block'
-            }
+            // if (json.id == 1 || json.name == 'bulbasaur') {
+            //     goBack.style.display = 'none'
+            // } else {
+            //     goBack.style.display = 'block'
+            // }
 
             if (json.id == 898 || json.name == 'calyrex') {
                 next.style.display = 'none'

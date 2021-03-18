@@ -110,8 +110,6 @@ body {
     box-shadow: 5px 10px 10px;
 }
 
-
-
 .container {
     background-color: rgba(231, 190, 231, 0.5);
     border: 20px double black;
@@ -121,11 +119,6 @@ body {
     box-shadow: 5px 10px 10px;
     
 }
-
-/* button {
-    color: black;
-    border: transparent;    
-} */
 
 p {
     font-size:50px;
